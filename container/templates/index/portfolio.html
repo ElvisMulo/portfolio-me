@@ -1,0 +1,174 @@
+{% extends "index/header.html" %}
+{% load static %}
+{% block content %}
+
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading text-uppercase">
+                <span style="color: rgb(52,58,64);">Hi, I'm Elvis Mulowayi</span>
+            </div>
+            <div class="row text-center mx-auto justify-content-center align-items-center align-content-center align-self-center">
+                <div class="col-md-10 col-sm-12 text-center">
+                    <p class="text-center" style="color: rgb(52,58,64);font-size: 18px;font-family: Montserrat;">
+                        As a software developer with a degree in Computer Science and two years of hands-on 
+                        experience in Django and Vue.js, I am dedicated to software engineering 
+                        and driven to create innovative projects that deliver significant value. 
+                        Currently, I am honing my skills at TooMuchWifi, where I continue to develop 
+                        and implement solutions that meet high standards of performance and reliability.
+                    </p>
+                </div>
+            </div>
+            <a class="btn btn-primary text-center justify-content-center align-items-center align-content-center align-self-center btn-xl 
+                text-uppercase js-scroll-trigger" role="button" href="#portfolio" style="width: 183.094px;height: 66px;background: rgb(114, 131, 135);
+                border-width: 0px;">see more
+            </a>
+        </div>
+    </div>
+</header>
+
+<style type="text/css">
+    .project-title{
+        color: rgb(52,58,64);
+    }
+</style>
+
+<section id="portfolio" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Projects</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#liquidModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'index/img/code3.jpg' %}" alt="liquid-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">Tracking Bugs</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        An issue tracker web-app that keeps track of reported software issues in projects.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#swiftModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'index/img/code2.jpg' %}" alt="swiftstay-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">Blog</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        A blogging application for motivating individuals and sharing knowledge
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#mzansiModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'index/img/news.jpg' %}" alt="chatbot-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">World News</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        A news articles website that collects headlines from all major news sources.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#chatbotModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'index/img/chatbot.jpg' %}" alt="mzansi-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">Chatbot</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        
+                    
+                    A web application combining Django and an open-source Large Language Model and OpenAI
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#weatherModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'index/img/weather.jpg' %}" alt="weather-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">Weather App</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        A weather forecast app. Allows users to search for the weather in any major city.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><em class="fa fa-plus fa-3x" style="color: rgb(52,58,64);"></em></div>
+                    </div>
+                    <img class="img-fluid img-fluid" src="{% static 'index/img/code1.jpg' %}" alt="portfolio-thumb">
+                </a>
+                <div class="portfolio-caption">
+                    <h4 class="project-title">Portfolio</h4>
+                    <p style="font-family: Montserrat; font-style: normal;">
+                        A personal website to showcase projects I've been working on.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="sectionContact" class="d-flex justify-content-center align-items-center" >
+    <div class="container" style="background-color: #f6f8ff; margin-top: -200px; width: 88vh;">
+        <div class="row">
+            <div class="col-md-12 justify-content-center align-items-center" style=" margin-top: 160px; margin-bottom: 70px; height: 10px;">
+                <h3 class="text-center" style="color: rgb(52,58,64)">
+                    CONTACT
+                </h3>
+            </div>
+        </div>
+        <form method="POST" action="{% url 'portfolio_home' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                {% for message in messages %}
+                <div class="alert alert-danger">
+                    <a class="close" href="#" data-dismiss="alert">×</a>
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.subject }}
+            </div>
+            <div class="form-group">
+                {{ form.message }}
+            </div>
+            <div class="form-group d-flex justify-content-end">
+                
+                <button class="btn btn-sm border-light text-end" type="submit" 
+                    style="background-color: rgb(200, 211, 213);color: rgb(33,37,41);">send
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

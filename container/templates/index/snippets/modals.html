@@ -1,0 +1,262 @@
+{% load static %}
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="liquidModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <h3>Bug Tracker</h3>
+                            <p>
+                                A bug tracker web-app that keeps track of reported software bugs or issues in software development
+                                    projects. Helps teams collaborate and get work done easily and more efficiently. 
+                                    The system has a per-project role-based access control for users. The system allows for 4 types 
+                                    of users; Admin, Project Manager, Developer, and Submitter.<br><br>
+                                    {% comment %} Site hosted on Heroku's free plan. Might take a moment to open on first launch. {% endcomment %}
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+                                    <span class = "badge badge-dark">Django</span>
+                                    <span class = "badge badge-dark">Vuejs</span>                        
+                                    <span class = "badge badge-dark">Typescript</span>                        
+                                    <span class = "badge badge-dark">PostgreSQL</span>
+                                    <span class = "badge badge-dark">DOCKER</span>
+{% comment %} 
+                                   <span class = "badge badge-dark">AWS</span>
+                                    <span class = "badge badge-dark">Heroku</span> {% endcomment %}
+                                </li>
+                            </ol>
+                            
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                <a class="btn button-dark" type="button" target="_blank" href="https://github.com/ElvisMulo/bug-tracker">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/liquid.jpg' %}" 
+                                style="margin-top: 15px;">
+                        </div> {% endcomment %}
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="swiftModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <h3 style="margin: 25px;">
+                                Blog App
+                            </h3>
+                            <p>
+                                In the grand scheme of things, over an extended period, 
+                                the blogging application endeavors to cultivate motivation 
+                                among individuals, offering them a versatile platform to delve 
+                                into a myriad of subjects, spanning from insightful programming 
+                                blogs to the intricacies of mathematics and the cutting-edge realms of artificial intelligence
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+
+                                    <span class = "badge badge-dark">Djangp</span>
+                                    <span class = "badge badge-dark">Graphql</span>
+                                    <span class = "badge badge-dark">Typescript</span>
+                                    <span class = "badge badge-dark">Vuejs</span>
+                                    <span class = "badge badge-dark">PostgreSQL</span>
+                                 
+                                </li>
+                            </ol>
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                <a class="btn button-dark" type="button" target="_blank" href="https://github.com/ElvisMulo/blog">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/swift.png' %}" 
+                                style="margin-top: 15px;">
+                        </div> {% endcomment %}
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="mzansiModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <h3 style="margin: 25px;">
+                                Mzansi News
+                            </h3>
+                            <p>
+                                A news articles website. Gathers all the headlines from all the major news networks. 
+                                Users can sign up to get access to the site's search functionality, which allows them to 
+                                search for news based on location, category, or topic. Made use of NEWS-API to make calls 
+                                for the data. <br><br>
+                              
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+                                    <span class = "badge badge-dark">RESTful API</span>
+                                    <span class = "badge badge-dark">Django</span>
+                                    <span class = "badge badge-dark">Bootstrap</span>
+                                </li>
+                            </ol>
+                            
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                {% comment %} <a class="btn button-dark" type="button" target="_blank" href="https://mzansinews.herokuapp.com/">
+                                    Live&nbsp;<em class="fa fa-play-circle-o"></em>
+                                </a> {% endcomment %}
+                                <a class="btn button-dark" type="button" target="_blank" href="https://github.com/ElvisMulo/news-aggregator">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/mzansi.jpg' %}" 
+                                style="margin-top: 15px;">
+                        </div> {% endcomment %}
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="chatbotModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <h3>Chatbot</h3>
+                            <p>
+                                A Django and Python chatbot webapp.
+                                A web application combining Django and an open-source Large Language Model 
+                                (LLM) from Hugging Face to classify user input into states and generate responses using OpenAI's ChatGPT
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+                                    <span class = "badge badge-dark">Django</span>
+                                    <span class = "badge badge-dark">LLM</span>
+                                    <span class = "badge badge-dark">Python</span>
+                                    <span class = "badge badge-dark">OpenAI</span>
+                                </li>
+                            </ol>
+                            
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                <a class="btn button-dark" type="button" target="_blank" href="">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/chatbot.jpg' %}" 
+                                style="margin-top: 15px;">
+                        </div> {% endcomment %}
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="weatherModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 text-center">
+                            <h3>Blue Ski</h3>
+                            <p>
+                                A weather forecast app. Allows users to search for the weather in any major city in the world. 
+                                Made use of OpenWeatherMap-API to make calls for the data.
+                                <br><br>
+                                {% comment %} Hosted on Heroku using a free plan. Site might take a moment to open on first launch. {% endcomment %}
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+                                    <span class = "badge badge-dark">RESTful API</span>
+                                    <span class = "badge badge-dark">Django</span>
+                                    <span class = "badge badge-dark">Bootstrap</span>
+                                    {% comment %} <span class = "badge badge-dark">Heroku</span> {% endcomment %}
+                                </li>
+                            </ol>
+                            
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                {% comment %} <a class="btn button-dark" type="button" target="_blank" href="https://blue-ski.herokuapp.com/">
+                                    Live&nbsp;<em class="fa fa-play-circle-o"></em>
+                                </a> {% endcomment %}
+                                <a class="btn button-dark" type="button" target="_blank" href="https://github.com/ElvisMulo/weather-forecast">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/weather.jpg' %}" 
+                                style="margin-top: 15px;">
+                        </div>
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 text-center">
+                            <h3>Personal Portfolio</h3>
+                            <p>
+                                A personal website to showcase my skills and projects I've been working on. 
+                                Most of the projects were built using Django. All the source code for the projects 
+                                in the portfolio is on Github.
+                            </p>
+                            <ol>
+                                <li style="margin-left: -40px; list-style: none;">
+                                    <span class = "badge badge-dark">Django</span>
+                                    <sp class = "badge badge-dark">Bootstrap</sp an>
+                                    {% comment %} <span class = "badge badge-dark">Heroku</span>  {% endcomment %}
+                                     
+                                </li>
+                            </ol>
+                            
+                            <div class="btn-group" role="group" style="margin: 5px;">
+                                <a class="btn button-dark" type="button" target="_blank" href="https://github.com/ElvisMulo/portfolio">
+                                    Source&nbsp;<em class="fa fa-github"></em>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-none d-sm-block">
+                            <img class="img-fluid img-thumbnail" alt='project screenshot' src="{% static 'index/img/code5.jpg' %}" 
+                                style="margin-top: 15px;">
+                        </div>
+                    </div>
+                    {% include 'index/snippets/close_modal_button.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

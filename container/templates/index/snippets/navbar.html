@@ -1,0 +1,21 @@
+{% load static %}
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container">
+        <a
+            class="navbar-brand"
+            href="{% url 'portfolio_home' %}"
+            style="color: rgb(200, 211, 213);border-color: rgb(200, 211, 213);font-size: 20px; font-family: 'Alfa Slab One', cursive"
+            >Elvis Mulowayi
+        </a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background: rgb(200, 211, 213);">
+            <i class="fa fa-bars" style="color: rgb(114, 131, 135);"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PROJECTS</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sectionContact">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/ElvisMulo" target="_blank" rel="noopener noreferrer">Github&nbsp;<em class="fa fa-github" style="font-size: 14px;"></em></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

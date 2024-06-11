@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% load static %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0" />
+		<title>Elvis Mulowayi</title>
+		<meta name="description" content="Elvis Mulowayi's personal website.">
+
+		<link rel="stylesheet" href="{% static 'index/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'index/css/styles.min.css' %}" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		{% comment %} <link rel="shortcut icon" type="image/png" href="{% static 'index/favicon/portfolio.png' %}"/> {% endcomment %}
+		<link rel="manifest" href="{% static 'index/manifest.json' %}" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<style type="text/css">
+			.button-dark {
+				background-color: rgb(52,58,64);color: aliceblue; border-color: aliceblue;
+			}
+
+			.badge-dark {
+				background-color: grey; color: white; padding: 4px; font-family: Montserrat;
+			}
+
+			p {
+				font-size:large;
+				color: rgb(114, 131, 135);
+			}
+		</style>
+	</head>
+
+	<body id="page-top" style="background-color: rgb(248, 249, 250);">
+		{% include 'index/snippets/navbar.html' %}
+		<style>
+			.main {
+				min-height: 61vh; height: 100%;
+			}
+		</style>
+
+		<div class="main">{% block content %} {% endblock %}</div>
+
+		{% include 'index/snippets/footers.html' %}
+
+		{% include 'index/snippets/modals.html' %}
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		<script src="{% static 'index/js/script.min.js' %}"></script>
+	</body>
+</html>
