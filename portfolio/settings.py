@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import django_heroku
-import dj_database_url
+
 
 
 
@@ -166,6 +165,4 @@ EMAIL_USE_SSL = False
 EMAIL_HOST_USER = 'elvismulowayi@gmail.com'
 EMAIL_HOST_PASSWORD = config('PORTFOLIO_EMAIL_PASSWORD')
 
-
-django_heroku.settings(locals())
 
